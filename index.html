@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
-    <title>Dev Book Blog</title>
+    <link rel="icon" href="icones/icon.svg" type="image/svg">
+    <title>Dev Book Planner</title>
 </head>
 <body>
     <header>
         <div class="dropdown">
-           
             <div class="dropdown-content">
                 <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="pages/resenhas.html">Resenhas</a></li>
-                        <li><a href="">Blog</a></li>
+                        <li><a href="pages/resenhas.html">Livros Lidos</a></li>
+                        <li><a href="pages/blog.html">Blog</a></li>
                         <li><a href="pages/colunas.html">Colunas</a></li>
                         <li><a href="">Sobre Nós</a></li>
                     </ul>
@@ -27,7 +27,7 @@
     <hr>
     <div class="cabecalho">
         <div class="cabecalho-top">
-            <h1 class="titulo-cabecalho">devBookBlog</h1>
+            <h1 class="titulo-cabecalho">devBookPlanner</h1>
             <section class="widget-info">
                 <div class="imagem-perfil">
                     <img src="images/perfil.jpg" alt="">
@@ -42,27 +42,17 @@
             </section>
         </div>
         <div class="autoras">
-            <div class="autor">
-                <img src="images/sarah-j-mass.jpeg" alt="">
-                <p><a href="autores/sarah-j-mass.html">Trono de Vidro</a></p>
+            <div>   
+                <p class="autor"><a href="series-literarias/tog.html">Trono de Vidro</a></p>
+
+                <p class="autor">O Povo do Ar</p>
+
+                <p class="autor">Grishaverso</p>
+            
+                <p class="autor">Senhor dos anéis</p>
+            
+                <p class="autor">As Crônicas de Narnia</p>
             </div>
-            <div class="autor">
-                <img src="images/Holly_Black.jpg" alt="">
-                <p>O Povo do Ar</p>
-            </div>
-            <div class="autor">
-                <img src="images/colleen_hoover.jpg" alt="">
-                <p>Grishaverso</p>
-            </div>
-            <div class="autor">
-                <img src="images/taylor-jenkins-reid.jpg" alt="">
-                <p>Desventuras em Série</p>
-            </div>
-            <div class="autor">
-                <img src="images/agatha-christie.jpg" alt="">
-                <p>Tons Mais Escuros de Magia</p>
-            </div>
-           
         </div>
 
     </div>
@@ -84,7 +74,7 @@
                     
                 </div>
                 <div class="autora-resenha">
-                    <p>Ana P</p>
+                    <p><a href="resenhas/o-principe-cruel.html">Continuar lendo -></a></p>
                 </div>
                 
             </div>
@@ -104,49 +94,65 @@
             </div>
 
             <div class="leitura">
-
                 <h1>Leitura do Mês</h1>
                 <div class="boxreed">
-                    <img src="images/tithe.jpg" alt="">
-                    <ul>
-                        <li><h2>Tithe</h2></li>
-                        <li><b>Autor:</b> Holly Black</li>
-                        <li>Ano de Lançamento: 2002</li>
-                        <li>Editora: Galera Record</li>
-                        <li>Páginas: 299</li>
-                        <li>Gênero: Romance, Fantasia, Ficção juvenil, Literatura fantástica</li>
-                        
-                    </ul>
+                    <div class="col-1">
+                        <img src="images/tithe.jpg" alt="">
+                    </div>
+                    <div class="col-2">
+                        <ul>
+                            <li><h2>Tithe</h2></li>
+                            <li><strong>Autor:</strong> Holly Black</li>
+                            <li><strong>Ano de Lançamento:</strong> 2002</li>
+                            <li><strong>Editora:</strong> Galera Record</li>
+                            <li><strong>Páginas:</strong> 299</li>
+                            <li><strong>Gênero:</strong> Romance, Fantasia, Ficção juvenil, Literatura fantástica</li>
+                            
+                        </ul>
+                    </div>
+                    
 
                 </div>
                 
             </div>
-            <div>
-                <h1>Colaboradores</h1>
+            <h1>Colaboradores</h1>
+            <div class="colabs">
+                
+                
+                    <div class="tooltip">
+                        <span class="tooltiptext">Ana Paula Berto</span>
+                        <img src="images/perfil.jpg" alt="">
+                        
+                    </div>
+    
+                    <div class="tooltip">
+                        <span class="tooltiptext">Maria Ilanny Moura</span>
+                        <img src="images/colunista.jpg" alt="">
+                        
+                    </div>
+                
             </div>
             <div>
-                <h1>Autoras</h1>
                 <div class="autoras-mobile">
             
                     <div class="autor">
-                        <img src="images/sarah-j-mass.jpeg" alt="">
-                        <p>Sarah J Mass</p>
+                        <p><a href="autores/sarah-j-mass.html">Trono de Vidro</a></p>
                     </div>
                     <div class="autor">
-                        <img src="images/Holly_Black.jpg" alt="">
-                        <p>Holly Black</p>
+                        
+                        <p>O Povo do Ar</p>
                     </div>
                     <div class="autor">
-                        <img src="images/colleen_hoover.jpg" alt="">
-                        <p>Collen Hoover</p>
+                        
+                        <p>Grishaverso</p>
                     </div>
                     <div class="autor">
-                        <img src="images/taylor-jenkins-reid.jpg" alt="">
-                        <p>Taylor Jenkins Reid</p>
+                        
+                        <p>Senhor dos anéis</p>
                     </div>
                     <div class="autor">
-                        <img src="images/agatha-christie.jpg" alt="">
-                        <p>Agatha Christie</p>
+                        
+                        <p>As Crônicas de Narnia</p>
                     </div>
                     
                 </div>

@@ -2,27 +2,30 @@
 
 /* Estilo padrão para telas maiores que 768px */
 
-body {
-	background-color: #ffefe6
-}
 * {
     margin: 0;
     padding: 0;
     border: 0;
 }
+
+body {
+	background-color: #ffefe6
+}
+
+main, header, nav ul, footer {
+    display: flex;
+	
+	
+}
+
 header {
-	display: flex;
 	padding: 20px;
     margin: 0%;
 	justify-content: center;
 	background-color: #421210; 
 }
 
-main {
-    display: flex;
-	justify-content: center;
-	
-}
+
 
 h1,h2,h3, h5, h6 {
     font-family: 'Rokkitt', serif;
@@ -30,7 +33,6 @@ h1,h2,h3, h5, h6 {
 }
 
 nav ul {
-	display: flex;
 	list-style: none;
 	padding: 0;
 	flex-direction: inherit;
@@ -55,9 +57,6 @@ section {
 	
 }
 
-section h2 {
-	color: #333;
-}
 .hr-coluna {
 	background-color: black;
 	width: 1%;
@@ -66,20 +65,19 @@ section h2 {
 }
 
 
+footer,button{
+	background-color: #421210;
+}
 footer {
 	
 	padding: 20px;
 	text-align: center;
-	display: flex;
 	align-items: center;
 	justify-content: center;
-	border-top-width: 2pt; 
-	border-style: dashed;
-	border-color:  #421210; 
 }
 
 button{
-	background-color: #421210;
+	
 	border-radius: 15px;
 	padding: 15px;
 
@@ -90,6 +88,7 @@ button a {
 }
 a {
 	text-decoration: none;
+	color: #421210;
 	
 }
 
@@ -104,11 +103,25 @@ p {
 	text-align: justify;
 	margin-bottom: 5%;
 }
+
+/* display: flex; */
+.grade, .linha, .card, .imagem-perfil, .autoras, .autoras div, .autor, .redes, .autora-resenha, .cabecalho-top, .cabecalho, .colunista, .itens-colunas, .titulo-coluna, .boxreed, .guia, .guia-img, .guia ul, .topicos,.colabs, .tooltip{
+	display: flex;
+}
+
 #principe-cruel{
 	background-image: url("../images/mapa-elfhame.jpg");
 	background-attachment: fixed;
 	background-size: contain;
+	justify-content: center;
 	
+}
+
+#principe-cruel .boxreed {
+	margin-bottom: 5%;
+}
+#principe-cruel  .col-1 {
+	width: 30%;
 }
 
 .img-autor {
@@ -124,51 +137,85 @@ p {
 	margin-inline: 5%;
 }
 .grade {
-	display: grid;
-	grid-template-areas:
-	  "main main main"
-	  "main main main"
-	  "main main main";
-	padding: 5%;
-}
-.card div {
-	padding: 5%;
-}
-.card {
-	display: flex;
+	width: 100%;
 	flex-direction: column;
-	background-color: #e2d3ca;
-	margin: 20px;
-	border-radius: 15px;
+	
 	
 }
 
+.linha {
+	padding-inline: 5%;
+}
+
+.bloco-livros{
+	margin: 0%;
+	padding: 0%;
+	display: flex;
+	width: 100%;
+}
+.card {
+	flex-direction: column;
+	margin: 20px;
+	border-radius: 15px;
+	width: 20%;
+	
+	
+}
+.card img {
+	width: 100%;
+	border-radius: 15px;
+	box-shadow: 0 0 20px rgba(0,0,0,.5);
+	
+	
+}
 .resenha {
 	box-shadow: 0 0 20px rgba(0,0,0,.5);
 	border-radius: 15px;
 	background-color: #ffefe6;
+
 	
 
 }
 
+.img-resenha {
+	width: 30%;
+	border-radius: 15px;
+	box-shadow: 0 0 20px rgba(0,0,0,.5);	
+	
+}
+
+
 .imagem-perfil {
-	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 .autoras {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+	justify-content: center;
 	border-top-width: 2pt; 
 	border-bottom-width: 2pt; 
+	align-content: center;
 	border-style: dashed;
 	border-color:  #421210; 
+	align-items: center;
 	
 
 }
+
+.autoras div {
+	justify-content: center;
+	width: 100%;
+	align-items: center;
+	align-content: center;
+	margin-inline: 40px;
+}
+.autor {
+	
+	margin-bottom: 0px;
+	
+	margin: 20px;
+	margin-inline: 40px;
+}
 .redes {
-	display: flex;
 	background-color: #421210;
 	border-radius: 15px;
 	padding: 3px;
@@ -183,8 +230,6 @@ p {
 
 }
 .autora-resenha {
-
-	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
@@ -197,27 +242,18 @@ p {
 
 }
 
+
 .nome {
 	width: 100%;
 	font-size: 15pt;
 }
-.autor {
 
-	width: 10%;
-	margin-inline: 5%;
-	margin-top: 20px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
 .cabecalho-top {
-	display: flex;
 	align-items: center;
 	justify-content: space-around;
 	
 }
 .cabecalho {
-	display: flex;
 	flex-direction: column;
 	
 	
@@ -258,7 +294,6 @@ p {
 }
 
 .colunista {
-    display: flex;
     align-items: center;
 	margin-top: 5%;
 }
@@ -286,7 +321,6 @@ p {
 }
 
 .itens-colunas {
-	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-content: center;
@@ -295,10 +329,6 @@ p {
 	margin: 5%;
 }
 
-.titulo-coluna {
-	display: flex;
-	
-}
 
 .texto{
   
@@ -312,21 +342,26 @@ p {
 
 .capa {
     border-radius: 15pt;
-    width: 50%;
 	border-radius: 15px 15px 0 0;
 	width: 100%;
 }
 
-.leitura img {
-	width: 30%;
+
+.col-1 {
+ width: 50%;
+ margin-inline-end: 20px;	
+}
+.col-2 {
+	width: 50%;
+}
+.col-1 img {
+	width: 100%;
 	margin-inline-end: 5%;
+	border-radius: 15px;
+	box-shadow: 0 0 20px rgba(0,0,0,.5);
+
 }
 
-.boxreed {
-	display: flex;
-	
-	
-}
 
 .boxreed ul {
 	list-style: none ;
@@ -340,9 +375,84 @@ p {
 .conteiner-right h1, h2, h3 {
 	margin-block: 20px;
 }
+.guia {
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	width: 100%;
+	padding-inline: 10%;
+}
 
+.guia-img {
+	justify-content: center;
+	
+}
+.guia h1 {
+	font-size: 30pt;
+}
+.guia img {
+	width: 40%;
+	border-radius: 15px;
+	box-shadow: 0 0 20px rgba(0,0,0,.5);
+}
+.guia ul {
+	flex-direction: column;
+	align-items: center;
+	list-style: none;
+	margin-bottom: 5%;
+
+}
+
+.guia li {
+	font-size: 18pt;
+	margin-block: 10px;
+}
+
+ul h1 {
+	margin-bottom: 20px;
+}
+.topicos {
+	flex-direction: column;
+	
+}
+.colabs {
+
+	padding: 5%;
+
+}
+
+.colabs img {
+	border-radius: 50%;
+	width: 50%;
+	margin-block: 10px;
+}
+
+.tooltip {
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.tooltiptext {
+	visibility: hidden;
+	background-color: #421210;
+	color: #ffefe6;
+	border-radius: 6px;
+	text-align: center;
+	padding: 5px;
+	
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+
+.tooltip:hover img {
+	width: 60%;
+}
+  
 /* Estilo para telas menores que 768px */
-@media (max-width: 767px) {
+@media (max-width: 967px) {
 
 	main {
 		flex-direction: column;
@@ -369,7 +479,7 @@ p {
 	section {
 		margin: 10px;
 		padding: 10px;
-        width: 90%;
+        width: 93%;
 	}
 
 	footer {
@@ -379,9 +489,11 @@ p {
 		padding: 10px;
 	}
 	.grade {
-		display: flex;
 		flex-direction: column;
 		
+	}
+	.linha {
+		flex-direction: column;
 	}
 	
 
@@ -391,11 +503,7 @@ p {
 		
 	}
 	.autoras-mobile {
-		display: grid;
-			grid-template-areas:
-			"main main"
-			"main main";
-			padding: 5%;
+		display: flex;
 			
 	}
 	.cabecalho-top, .cabecalho, .autoras-mobile {
@@ -425,7 +533,7 @@ p {
 	}
 
 	.widget-info {
-		width: 90%;
+		width: 93%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -438,7 +546,7 @@ p {
 	display: block;
 	}
 	
-	.dropdown-content a:hover {background-color: #f1f1f1}
+	.dropdown-content a:hover {background-color: #671d1a}
 	
 	.dropdown:hover .dropdown-content {
 	display: block;
@@ -456,7 +564,7 @@ p {
 
 
 	.conteiner-right {
-		width: 90%;
+		width: 93%;
 	}
 
 
