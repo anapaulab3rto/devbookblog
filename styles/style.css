@@ -57,6 +57,15 @@ section {
 	
 }
 
+.main-colunas {
+	padding-inline: 20%;
+
+}
+.main-colunas section {
+	
+	width: 100%;
+}
+
 .hr-coluna {
 	background-color: black;
 	width: 1%;
@@ -156,10 +165,12 @@ p {
 .card {
 	flex-direction: column;
 	margin: 20px;
-	border-radius: 15px;
 	width: 20%;
 	
 	
+}
+.card .avaliacao {
+	box-shadow: none;
 }
 .card img {
 	width: 100%;
@@ -291,6 +302,7 @@ p {
 
 .avaliacao {
 	width: 25%;
+	box-shadow: none;
 }
 
 .colunista {
