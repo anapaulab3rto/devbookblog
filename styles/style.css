@@ -25,13 +25,17 @@ header {
 	background-color: #421210; 
 }
 
-
-
 h1,h2,h3, h5, h6 {
     font-family: 'Rokkitt', serif;
 	color: #421210;
 }
-
+footer {
+	display: flex;
+	align-items: center;
+}
+footer p {
+	color: #e2d3ca;
+}
 nav ul {
 	list-style: none;
 	padding: 0;
@@ -174,7 +178,7 @@ p {
 }
 .card img {
 	width: 100%;
-	border-radius: 15px;
+	border-radius: 10px;
 	box-shadow: 0 0 20px rgba(0,0,0,.5);
 	
 	
@@ -247,7 +251,13 @@ p {
 
 }
 
-
+.leitura {
+	align-items: center ;
+	justify-content: center;
+	border-bottom-width: 2pt; 
+	border-style: dashed;
+	border-color:  #421210; 
+}
 .autoras-mobile {
 	display: none;
 
@@ -317,21 +327,16 @@ p {
     border-radius: 50%;
     width: 15%;
 }
-
 .informacoes {
-	
     margin-inline-start: 5%;
 }
 .coluna h1 {
 	font-size: 35pt;
 	margin-bottom: 3%;
 }
-
 .coluna {
 	background-color: #e2d3ca;
-	
 }
-
 .itens-colunas {
 	flex-direction: column;
 	justify-content: center;
@@ -340,25 +345,17 @@ p {
 .item-coluna {
 	margin: 5%;
 }
-
-
 .texto{
-  
 	padding: 5%;
-   
-    
 }
 .informacoes h6, h5 {
     margin: 0;
 }
-
 .capa {
     border-radius: 15pt;
 	border-radius: 15px 15px 0 0;
 	width: 100%;
 }
-
-
 .col-1 {
  width: 50%;
  margin-inline-end: 20px;	
@@ -371,13 +368,14 @@ p {
 	margin-inline-end: 5%;
 	border-radius: 15px;
 	box-shadow: 0 0 20px rgba(0,0,0,.5);
-
 }
-
+.boxreed {
+	margin-block: 20px;
+}
 
 .boxreed ul {
 	list-style: none ;
-	font-size: 18pt;
+	font-size: 16pt;
 }
 
 .conteiner-right {
@@ -385,7 +383,7 @@ p {
 }
 
 .conteiner-right h1, h2, h3 {
-	margin-block: 20px;
+	margin-block: 13px;
 }
 .guia {
 	flex-direction: column;
@@ -428,39 +426,60 @@ ul h1 {
 	
 }
 .colabs {
-
-	padding: 5%;
-
+	
+	border-radius: 15px;
+	text-align: left;
+	padding: 10px;
+	margin-block: 20px;
+	align-items: flex-start;
 }
 
 .colabs img {
 	border-radius: 50%;
-	width: 50%;
-	margin-block: 10px;
+	width: 40%;
+
 }
 
 .tooltip {
+	position: relative;
+	text-align: left;
 	flex-direction: column;
 	align-items: center;
-}
-
-
-.tooltiptext {
-	visibility: hidden;
-	background-color: #421210;
-	color: #ffefe6;
-	border-radius: 6px;
-	text-align: center;
-	padding: 5px;
 	
 }
 
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: #555;
+	color: #fff;
+	margin: 0px;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -60px;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+  
+.tooltip .tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
 .tooltip:hover .tooltiptext {
 	visibility: visible;
-}
-
-.tooltip:hover img {
-	width: 60%;
+	opacity: 1;
 }
   
 /* Estilo para telas menores que 768px */
@@ -469,6 +488,8 @@ ul h1 {
 	main {
 		flex-direction: column;
 		align-content: center;
+		align-items: center;
+		padding: 10px;
 	}
 	header {
 		justify-content: space-around;
@@ -489,9 +510,15 @@ ul h1 {
 		color: #ffefe6;
 	}
 	section {
-		margin: 10px;
-		padding: 10px;
-        width: 93%;
+		margin: 0px;
+		margin-top: 10px;
+		padding: 0px;
+        width: 100%;
+		
+	}
+
+	.main-colunas {
+		padding-inline: 10px;
 	}
 
 	footer {
@@ -500,6 +527,13 @@ ul h1 {
 	p {
 		padding: 10px;
 	}
+	.card {
+		margin: 10px;
+	}
+	.card img {
+		border-radius: 5px;
+	}
+
 	.grade {
 		flex-direction: column;
 		
@@ -527,11 +561,21 @@ ul h1 {
 		display: none;
 	}
 
+	.autoras-mobile {
+
+		border-top-width: 2pt; 
+		border-style: dashed;
+		border-color:  #421210; 	
+		margin-top: 20px;
+
+	}
+
 	.autoras-mobile img {
-			border-radius: 50%;
-			margin-inline-start: 5%;
-			width: 45%;
-			
+		border-radius: 50%;
+		margin-inline-start: 5%;
+		width: 45%;
+		
+
 
 	}
 	
